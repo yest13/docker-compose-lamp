@@ -1,1 +1,641 @@
 <?php
+/*
+$a = 3;
+$a = $a+false;
+echo $a;
+//var_dump($a);
+*/
+/*
+$var = 'hello';
+echo $var[4];
+*/
+/*
+$s = 60;
+$m = 60;
+$ch = $s*$m*24;
+echo $ch;
+*/
+/*
+$var = 1;
+$var += 12;
+$var -= 14;
+$var *= 5;
+$var /= 7;
+$var++;
+$var--;
+echo $var;
+*/
+/*
+$a = 3;
+echo $a;
+*/
+/*
+$a = 10;
+$b = 2;
+$res = $a / $b;
+echo $res;
+*/
+/*
+$a = 17;
+$b = 10;
+$res = $a - $b;
+$c = $res;
+$d = 7;
+$result = $c + $d;
+echo $result;
+*/
+/*
+$text = 'Привет, Мир!';
+echo $text;
+*/
+/*
+$text1 = 'Привет, ';
+$text2 = 'Мир!';
+echo $text1 . $text2;
+*/
+/*
+$name = 'Юрий';
+echo 'Привет, ' . $name . '!';
+*/
+/*
+$age = '42';
+echo 'Мне ' . $age . ' года';
+*/
+/*
+$text = 'abcde';
+echo $text[4];
+*/
+/*
+$text = 'abcde';
+$text[0] = '!';
+echo $text;
+*/
+/*
+$num = '12345';
+$res = $num[0] + $num[1] + $num[2] + $num[3] + $num[4];
+echo $res;
+*/
+/*
+$min = 60;
+$hour = $min * 60;
+$day = $hour * 24;
+$mes = $day * 31;
+echo 'час ' . $hour . ' секунд, сутки ' . $day . ' секунд, месяц ' . $mes  . ' секунд';
+*/
+/*
+$sec = 13;
+$min = 30;
+$hour = 14;
+echo $hour . ':' . $min . ':' . $sec;
+*/
+/*
+$a = 5;
+$a *= $a;
+echo $a;
+*/
+/*
+$var = 47;
+$var += 7;
+//echo $var;
+$var -= 18;
+$var *= 10;
+$var /= 20;
+echo $var;
+*/
+/*
+$text = 'Я';
+$text .= ' хочу';
+$text .= ' знать';
+$text .= ' PHP!';
+echo $text;
+*/
+/*
+$var = 10;
+$var ++;
+$var ++;
+$var --;
+echo $var;
+*/
+/*
+$var = 10;
+$var += 7;
+$var ++;
+$var --;
+$var += 12;
+$var *= 7;
+$var -= 15;
+echo $var;
+*/
+/*
+$a = ['Привет, ', 'мир', '!'];
+echo $a[0] . $a[1] . $a[2];
+*/
+/*
+$a = ['Привет, ', 'мир', '!'];
+$text = $a[0] . $a[1] . $a[2];
+echo $text;
+*/
+/*
+$a = ['Привет, ', 'мир', '!'];
+$a[0] = 'Пока, ';
+echo $a[0] . $a[1] . $a[2];
+*/
+/*
+$staff = ['Андрей'=>150, 'Вася'=>200, 'Коля'=>180, 'Петя'=>250];
+echo 'зарплата Пети - ' . $staff['Петя'] . ', зарплата Коли - ' . $staff['Коля'];
+*/
+/*
+$arr1 = [1, 2, 3, 4, 5];
+$arr2 = [1=>1, 2, 3, 4, 5];
+$arr3[0] = 1;
+$arr3[1] = 2;
+$arr3[2] = 3;
+$arr3[3] = 4;
+$arr3[4] = 5;
+var_dump($arr3);
+*/
+/*
+$arr = [
+    'ru'=>['голубой', 'красный', 'зеленый'],
+    'en'=>['blue', 'red', 'green'],
+];
+echo $arr['en'][1];
+*/
+/*
+$arr=['a', 'b', 'c'];
+// echo $arr[0] . ', ' . $arr[1] . ', ' . $arr[2];
+$arr2 = ['a', 'b', 'c', 'd'];
+echo $arr2[0] . '+' . $arr2[1] . ', ' . $arr2[2] . '+' . $arr2[3];
+*/
+/*
+$arr = [2, 5, 3, 9];
+echo $result = $arr[0] * $arr[1] + $arr[2] * $arr[3];
+*/
+/*
+$arr[] = 1;
+$arr[] = 2;
+$arr[] = 3;
+$arr[] = 4;
+$arr[] = 5;
+var_dump($arr);
+*/
+/*
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+echo $arr['c'];
+*/
+/*
+$arr = ['a'=>1, 'b'=>2, 'c'=>3];
+echo $result = $arr['a']+$arr['b']+$arr['c'];
+*/
+/*
+$arr = ['Коля'=>'1000$', 'Вася'=>'500$', 'Петя'=>'200$'];
+echo 'зарплата Пети - ' . $arr['Петя'] . ', зарплата Коли - ' . $arr['Коля'];
+*/
+/*
+$arr = [1=>'понедельник',2=>'вторник',3=>'среда',4=>'четверг',5=>'пятница',6=>'суббота',7=>'воскресенье'];
+//echo $arr[4];
+$day = 4;
+echo $arr[$day];
+*/
+/*
+$arr = [
+    'cms'=>['joomla', 'wordpress', 'drupal'],
+    'colors'=>['blue'=>'голубой', 'red'=>'красный', 'green'=>'зеленый']
+];
+echo $arr['colors']['red'];
+*/
+/*
+$arr = [
+    'ru'=>[1=>'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+    'en'=>[1=>'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+];
+//echo $arr['en']['3'];
+$lang = 'en';
+$day = 5;
+echo $arr[$lang][$day];
+*/
+/*
+$a = 11;
+if ($a == 10) echo 'верно'; else echo 'неверно';
+*/
+/*
+$min = 58;
+if ($min >= 0 and $min <= 15 ) echo 'первая четверть';
+if ($min >= 16 and $min <= 30 ) echo 'вторая четверть';
+if ($min >= 31 and $min <= 45 ) echo 'третья четверть';
+if ($min >= 46 and $min <= 59 ) echo 'четвёртая четверть';
+*/
+/*
+//$lang = 'ru';
+$lang = 'en';
+$dayz = [
+    'ru'=>[1=>'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'],
+    'en'=>[1=>'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+];
+*/
+/*
+if ($lang === 'ru') $arr = $dayz['ru'];
+if ($lang === 'en') $arr = $dayz['en'];
+var_dump($arr);
+*/
+/*
+switch ($lang) {
+    case 'ru':
+        $arr = $dayz['ru'];
+    break;
+    case 'en':
+        $arr = $dayz['en'];
+    break;
+}
+var_dump($arr);
+*/
+/*
+$arr = $dayz[$lang];
+var_dump($arr);
+*/
+/*
+$a = 0;
+if ($a == 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = -1;
+if ($a > 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = 0;
+if ($a < 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = 0;
+if ($a >= 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = -1;
+if ($a <= 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = -1;
+if ($a != 0) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = 'test';
+if ($a == 'test') echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = 1;
+if ($a === 1) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = 0;
+if (!empty($a)) echo 'верно'; else echo 'неверно';
+*/
+/*
+$a = false;
+if (!isset($a)) echo 'верно'; else echo 'неверно';
+*/
+/*
+$var = false;
+if ($var != true) {
+    echo 'верно';
+} else echo 'неверно';
+*/
+/*
+$a = 6;
+ $a+=7; else $a/=10;
+echo $a;
+if ($a == 0 || $a == 5 )
+*/
+/*
+$a = 1;
+$b = 6;
+if (($a > 2 && $a < 11) || ($b >= 6 && $b < 14)) echo 'верно'; else echo 'неверно';
+*/
+/*
+$num = 3;
+switch ($num) {
+    case 1:
+        $result = 'зима';
+        break;
+    case 2:
+        $result = 'весна';
+        break;
+    case 3:
+        $result = 'лето';
+        break;
+    case 4:
+        $result = 'осень';
+        break;
+}
+echo $result;
+*/
+/*
+$day = 11;
+if ($day >= 1 && $day <= 10) echo 'первая декада';
+if ($day >= 11 && $day <= 20) echo 'вторая декада';
+if ($day >= 21 && $day <= 31) echo 'третья декада';
+*/
+/*
+$month = 8;
+if ($month == 12 || $month == 1 || $month == 2) echo 'зима';
+if ($month == 3 || $month == 4 || $month == 5) echo 'весна';
+if ($month == 6 || $month == 7 || $month == 8) echo 'лето';
+if ($month == 9 || $month == 10 || $month == 11) echo 'осень';
+*/
+/*
+$month = 3;
+switch ($month) {
+    case 1:
+        echo 'зима';
+        break;
+    case 2:
+        echo 'зима';
+        break;
+    case 3:
+        echo 'весна';
+        break;
+    case 4:
+        echo 'весна';
+        break;
+    case 5:
+        echo 'весна';
+        break;
+    case 6:
+        echo 'лето';
+        break;
+    case 7:
+        echo 'лето';
+        break;
+    case 7:
+        echo 'лето';
+        break;
+}
+*/
+/*
+$year = 2000;
+if ($year % 4 == 0 && $year % 100 != 0) echo 'високосным';
+if ($year % 400 == 0) echo 'високосным';
+else echo 'NOвисокосным';
+//if (is_int($year /=4) && !is_int($year /=100)) echo 1;
+//elseif (is_int($year /=400)) echo 2;
+//else echo 3;
+*/
+/*
+$a = 'abcde';
+if ($a[0] == 'a') echo '+';
+else echo '-';
+*/
+/*
+$a = '42345';
+if ($a[0] == '1' || $a[0] == '2' || $a[0] == '3') echo '+';
+else echo '-';
+*/
+/*
+$a = '678';
+echo $a[0]+$a[1]+$a[2];
+*/
+/*
+$a = '010001';
+if ($a[0]+$a[1]+$a[2] == $a[3]+$a[3]+$a[5]) echo '+';
+else echo '-';
+*/
+/*
+$num = 55;
+if ($num >= 10 && $num <= 99) {
+    $num = str_split($num);
+    $res = $num[0]+$num[1];
+        if ($res <= 9) {
+            echo 'сумма цифр однозначна';
+        }
+        else echo 'сумма цифр двузначна';
+}
+else echo 'out of range';
+*/
+
+//    echo 'out of range';
+//$res = array_map('intval', str_split($num));
+//$res = $res[0]+$res[1];
+//if ($res <= 9) echo 'сумма цифр однозначна';
+//else echo 'сумма цифр двузначна';
+
+//php_eol perehod stroki "/r/n"
+//ternarka
+/*
+$ar = array('html', 'css', 'php', 'js', 'jq');
+foreach ($ar as $value){
+    echo $value . '<br>';
+}
+*/
+
+/*$arr = [10, 20, 15, 17, 24, 35];
+$result = 0;
+foreach ($arr as $elem){
+    $result += $elem;
+//    $result = $elem + $result;
+}
+echo $result;*/
+
+/*$i=1;
+while ($i<=100){
+    echo $i . '<br>';
+    $i++;
+}*/
+
+/*for ($i=1; $i<=100; $i++){
+    echo $i . '<br>';
+}*/
+
+/*$arr = [10, 20, 15, 17, 24, 35];
+$result = 0;
+foreach ($arr as $key => $elem){
+    $elem = $elem**2;
+    $result += $elem;
+//        if ($key === 2)
+//            break;
+//    $result = $elem + $result;
+}
+echo $result;*/
+
+/*$arr = ['green'=>'зеленый', 'red'=>'красный','blue'=>'голубой'];
+foreach ($arr as $key => $elem){
+    echo $key . ' - ' . $elem . '<br>';
+}*/
+
+/*$arr = ['Коля'=>'200', 'Вася'=>'300', 'Петя'=>'400'];
+foreach ($arr as $key => $elem){
+    echo $key . ' - зарплата ' . $elem . ' долларов.' . '<br>';
+}*/
+/*
+$i=11;
+while ($i<=33){
+    echo $i . '<br>';
+    $i++;
+}*/
+/*
+for ($i=11; $i<=33; $i++){
+    echo $i . '<br>';
+}*/
+/*
+$i=0;
+while ($i<=100){
+    echo $i . '<br>';
+    $i=$i+2;
+}*/
+/*for ($i=0; $i<=100; $i=$i+2){
+    echo $i . '<br>';
+}*/
+
+/*$i=1;
+while ($i<=100){
+    $res += $i;
+    $i++;
+}
+echo $res;*/
+
+/*$arr = [2, 5, 9, 15, 0, 4];
+foreach ($arr as $elem){
+    if ($elem > 3 && $elem < 10){
+        echo $elem . '<br>';
+    }
+}*/
+
+/*$arr = [-2, 5, -9, 15, 0, -4];
+$result = 0;
+foreach ($arr as $elem){
+    if ($elem > 0){
+        $result += $elem;
+    }
+}
+echo $result;*/
+
+/*$arr = [1, 2, 5, 9, 44, 13, 40, 10];
+foreach ($arr as $elem){
+    if ($elem === 4){
+        echo 'Есть!';
+        break;
+    }
+}*/
+
+/*$arr = ['10', '20', '30', '50', '235', '3000'];
+foreach ($arr as $elem){
+    if ($elem[0] == 1 || $elem[0] == 2 || $elem[0] == 5){
+        echo $elem . '<br>';
+    }
+}*/
+
+/*$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+echo "'";
+foreach ($arr as $elem){
+    echo '-' . $elem;
+}
+echo "-'";*/
+
+/*$arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
+foreach ($arr as $elem){
+    if ($elem === 'суббота' || $elem === 'воскресенье') {
+        echo '<b>'.$elem.'</b>' . '<br>';
+        continue;
+    }
+    echo $elem . '<br>';
+}*/
+
+/*$arr = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
+foreach ($arr as $elem){
+    if ($elem === 'четверг') {
+        echo '<i>'.$elem.'</i>' . '<br>';
+        $day = $elem;
+        continue;
+    }
+    echo $elem . '<br>';
+}
+//echo $day;*/
+
+/*for ($i=1; $i<=100; $i++){
+    $arr[$i-1] = $i;
+}
+var_dump($arr);*/
+
+/*$arr = ['green'=>'зеленый', 'red'=>'красный', 'blue'=>'голубой'];
+foreach ($arr as $key=>$elem){
+    $en[] = $key;
+    $ru[] = $elem;
+}
+var_dump($ru);*/
+
+/*$num = 1000;
+$i = 0;
+while ($num >= 50){
+    $num = $num / 2;
+//    echo $num . '<br>';
+    $i++;
+}
+//echo $num . PHP_EOL;
+echo $num . '<br>';
+echo $i;*/
+/*
+for ($num = 1000, $i = 0; $num > 50; $num = $num / 2, $i++);
+echo $num . '<br>';
+echo $i;*/
+/*
+читать рпо относительные и абсолютные пути
+докер ламп сервер
+гитлаб*/
+/*
+function kub ($a){
+    return $a*$a*$a;
+//    echo $a;
+}
+
+$b = 3;
+echo kub($b);*/
+/*
+function kvadr ($a){
+    return $a*$a;
+//    echo $a;
+}
+
+$b = 5;
+echo kvadr($b);*/
+
+/*function summa2ch ($a, $b){
+    return $a+$b;
+//    echo $a;
+}
+$a = 100;
+$b = 5;
+echo summa2ch($a, $b);*/
+
+/*function summa2ch ($a, $b, $c){
+    return ($a-$b)/$c;
+//    echo $a;
+}
+$a = 45;
+$b = 5;
+$c = 2;
+echo summa2ch($a, $b, $c);*/
+
+//'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'
+
+function week ($a){
+    switch ($a) {
+        case 1:
+            return 'понедельник';
+        case 2:
+            return 'вторник';
+        case 3:
+            return 'среда';
+        case 4:
+            return 'четверг';
+        case 5:
+            return 'пятница';
+        case 6:
+            return 'суббота';
+        case 7:
+            return 'воскресенье';
+        };
+};
+
+$b = 2;
+echo week($b);
+
+
+
